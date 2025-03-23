@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ff0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 30px; /* কোণাগুলো গোল করার জন্য */
+    margin: 10px;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+.menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+}
+nav.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+nav.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.menu ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    display: block;
+}
+
+nav.menu ul li:last-child {
+    border-bottom: none;
+}
+
+.main-content {
+    padding: 40px 20px;
+}
+
+.money-bag {
+    width: 100px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.play-bot-btn {
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 10px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.telegram-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.telegram-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.telegram-box img {
+    width: 30px;
+    margin-right: auto;
+}
+
+.join-btn {
+    background-color: #ff0;
+    padding: 5px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border: 2px solid #000;
+}
+
+/* Menu Animation */
+nav.menu.show {
+    display: block;
+}
