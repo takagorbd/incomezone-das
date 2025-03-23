@@ -1,5 +1,5 @@
 // Smooth Scroll Animation
-document.querySelectorAll('a[href^="https://t.me/Income_zone0e_bot?start=r00162070985"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
